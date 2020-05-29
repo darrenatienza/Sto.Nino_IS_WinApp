@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sto.NinoRMS.App", "Sto.NinoRMS.App\Sto.NinoRMS.App.csproj", "{610E9A87-9680-462B-9D41-9CCA2F1C098C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sto.NinoRMS.Queries", "Sto.NinoRMS.Queries\Sto.NinoRMS.Queries.csproj", "{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "..\libraries\Helpers\Helpers.csproj", "{12E8C23E-00CA-49DF-8E04-D86C83F3C088}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Sto.NinoRMS.Setup", "Sto.NinoRMS.Setup\Sto.NinoRMS.Setup.vdproj", "{A26FA954-0C21-434C-81BE-CBD74D13482F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sto.NinoRMS.RestApi", "Sto.NinoRMS.RestApi\Sto.NinoRMS.RestApi.csproj", "{9E101036-25AC-4C42-9D48-236622E731E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{610E9A87-9680-462B-9D41-9CCA2F1C098C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610E9A87-9680-462B-9D41-9CCA2F1C098C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610E9A87-9680-462B-9D41-9CCA2F1C098C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610E9A87-9680-462B-9D41-9CCA2F1C098C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E8C23E-00CA-49DF-8E04-D86C83F3C088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E8C23E-00CA-49DF-8E04-D86C83F3C088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E8C23E-00CA-49DF-8E04-D86C83F3C088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E8C23E-00CA-49DF-8E04-D86C83F3C088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26FA954-0C21-434C-81BE-CBD74D13482F}.Debug|Any CPU.ActiveCfg = Debug
+		{A26FA954-0C21-434C-81BE-CBD74D13482F}.Debug|Any CPU.Build.0 = Debug
+		{A26FA954-0C21-434C-81BE-CBD74D13482F}.Release|Any CPU.ActiveCfg = Release
+		{A26FA954-0C21-434C-81BE-CBD74D13482F}.Release|Any CPU.Build.0 = Release
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E101036-25AC-4C42-9D48-236622E731E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

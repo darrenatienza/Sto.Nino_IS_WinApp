@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{610E9A87-9680-462B-9D41-9CCA2F1C098C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sto.NinoRMS.App</RootNamespace>
+    <AssemblyName>Sto.NinoRMS.App</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\libraries\bunifu\bunifu\Bunifu_UI_WinForms_1.11.5.1_Downloadly.ir\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="SimpleCrypto">
+      <HintPath>..\..\libraries\SimpleCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\BHW\frmAccomplishment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BHW\frmAccomplishment.Designer.cs">
+      <DependentUpon>frmAccomplishment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BHW\frmQuarterlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BHW\frmQuarterlyReport.Designer.cs">
+      <DependentUpon>frmQuarterlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BHW\frmHealthDataBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BHW\frmHealthDataBoard.Designer.cs">
+      <DependentUpon>frmHealthDataBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BHW\frmCommonHealthProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BHW\frmCommonHealthProfile.Designer.cs">
+      <DependentUpon>frmCommonHealthProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmOfficials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmOfficials.Designer.cs">
+      <DependentUpon>frmOfficials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmResidents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmResidents.Designer.cs">
+      <DependentUpon>frmResidents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmResidency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmResidency.Designer.cs">
+      <DependentUpon>frmResidency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmIndigency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmIndigency.Designer.cs">
+      <DependentUpon>frmIndigency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmBusinessClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmBusinessClearance.Designer.cs">
+      <DependentUpon>frmBusinessClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmBrgyClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Brgy\frmBrgyClearance.Designer.cs">
+      <DependentUpon>frmBrgyClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\System\frmAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\System\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CustomAttributes\UserRoleValidator.cs" />
+    <Compile Include="Helpers\Themes\SideBar.cs" />
+    <Compile Include="Helpers\LocalUtils.cs" />
+    <Compile Include="IFormAction.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\dsReport.cs">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\dsReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BrgyOfficialCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\BrgyOfficialCard.Designer.cs">
+      <DependentUpon>BrgyOfficialCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\BHW\frmAccomplishment.resx">
+      <DependentUpon>frmAccomplishment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BHW\frmQuarterlyReport.resx">
+      <DependentUpon>frmQuarterlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BHW\frmHealthDataBoard.resx">
+      <DependentUpon>frmHealthDataBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BHW\frmCommonHealthProfile.resx">
+      <DependentUpon>frmCommonHealthProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmOfficials.resx">
+      <DependentUpon>frmOfficials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmResidents.resx">
+      <DependentUpon>frmResidents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmResidency.resx">
+      <DependentUpon>frmResidency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmIndigency.resx">
+      <DependentUpon>frmIndigency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmBusinessClearance.resx">
+      <DependentUpon>frmBusinessClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Brgy\frmBrgyClearance.resx">
+      <DependentUpon>frmBrgyClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\System\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\rptBizClearance.rdlc" />
+    <EmbeddedResource Include="Reports\rptBrgyClearance.rdlc" />
+    <EmbeddedResource Include="Reports\rptResidentDetail.rdlc" />
+    <EmbeddedResource Include="Reports\rptResidentList.rdlc" />
+    <EmbeddedResource Include="Reports\rptQuarterlyReport.rdlc" />
+    <EmbeddedResource Include="Reports\rptHealthDataBoard.rdlc" />
+    <EmbeddedResource Include="Reports\rptIndigency.rdlc" />
+    <EmbeddedResource Include="Reports\rptResidency.rdlc" />
+    <EmbeddedResource Include="UserControls\BrgyOfficialCard.resx">
+      <DependentUpon>BrgyOfficialCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Pdf\about.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\conference-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons8-male-user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\x-mark-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\login-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\login-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\menu-4-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dashboard-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\info-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\maximize-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\minimize-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\close-window-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\restore-window-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gear-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\arrow-37-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\dsReport.xsc">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsReport.xss">
+      <DependentUpon>dsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\plus-5-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-3-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-2-white-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-13-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-256_w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-3-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear-2-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libraries\Helpers\Helpers.csproj">
+      <Project>{12e8c23e-00ca-49df-8e04-d86c83f3c088}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sto.NinoRMS.Queries\Sto.NinoRMS.Queries.csproj">
+      <Project>{38c60a06-31d4-4c9f-b5df-e5a245f07fd7}</Project>
+      <Name>Sto.NinoRMS.Queries</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-5-256_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-256 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-256_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator-2-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse-256_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-96-256-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\bg_screenshot_1.jpg" />
+    <None Include="Resources\bg_2.png" />
+    <None Include="Resources\conference-256_dogder.png" />
+    <None Include="Resources\arrow-27-256.png" />
+    <None Include="Resources\save-128.png" />
+    <None Include="Resources\printer-5-256_w.png" />
+    <None Include="Resources\refresh-256_gray1.png" />
+    <None Include="Resources\plus-4-256.png" />
+    <None Include="Resources\minus-256.png" />
+    <None Include="Resources\pencil-2-128.png" />
+    <None Include="Resources\upload-2-256.png" />
+    <None Include="Resources\administrator-256 - Copy.png" />
+    <None Include="Resources\checked-user-256 - Copy.png" />
+    <None Include="Resources\account-logout-256 - Copy.png" />
+    <None Include="Resources\trash-2-256.png" />
+    <None Include="Resources\save-25687.png" />
+    <None Include="Resources\x-mark-5-256.png" />
+    <Content Include="todo.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

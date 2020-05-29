@@ -1,0 +1,2 @@
+cant connect to web api externally
+go to https://stackoverflow.com/questions/5442551/iisexpress-returns-a-503-error-from-remote-machines

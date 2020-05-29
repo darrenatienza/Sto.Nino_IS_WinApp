@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38C60A06-31D4-4C9F-B5DF-E5A245F07FD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sto.NinoRMS.Queries</RootNamespace>
+    <AssemblyName>Sto.NinoRMS.Queries</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Security.Cryptography">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>C:\Users\IT\Google Drive\Programming Language\BsuSystem\Student_Id_System\IDRecordSys\MicrosoftLib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Domain\Accomplishment.cs" />
+    <Compile Include="Core\Domain\Education.cs" />
+    <Compile Include="Core\Domain\Children.cs" />
+    <Compile Include="Core\Domain\HealthDataBoard.cs" />
+    <Compile Include="Core\Domain\CommonHealthProfile.cs" />
+    <Compile Include="Core\Domain\OfficialPosition.cs" />
+    <Compile Include="Core\Domain\Official.cs" />
+    <Compile Include="Core\Domain\BrgyBizClearance.cs" />
+    <Compile Include="Core\Domain\Indigency.cs" />
+    <Compile Include="Core\Domain\QuarterlyReport.cs" />
+    <Compile Include="Core\Domain\Residency.cs" />
+    <Compile Include="Core\Domain\BrgyClearance.cs" />
+    <Compile Include="Core\Domain\Resident.cs" />
+    <Compile Include="Core\Domain\Role.cs" />
+    <Compile Include="Core\Domain\User.cs" />
+    <Compile Include="Core\IRepositories\IEducationRepo.cs" />
+    <Compile Include="Core\IRepositories\IChildrenRepo.cs" />
+    <Compile Include="Core\IRepositories\IRoleRepo.cs" />
+    <Compile Include="Core\IRepositories\IQuarterlyReportRepo.cs" />
+    <Compile Include="Core\IRepositories\IHealthDataBoardRepo.cs" />
+    <Compile Include="Core\IRepositories\ICommonHealthProfileRepo.cs" />
+    <Compile Include="Core\IRepositories\IAccomplishmentRepo.cs" />
+    <Compile Include="Core\IRepositories\IOfficialPositionRepo.cs" />
+    <Compile Include="Core\IRepositories\IResidentRepo.cs" />
+    <Compile Include="Core\IRepositories\IResidencyRepo.cs" />
+    <Compile Include="Core\IRepositories\IOfficialRepo.cs" />
+    <Compile Include="Core\IRepositories\IIndigencyRepo.cs" />
+    <Compile Include="Core\IRepositories\IBrgyClearanceRepo.cs" />
+    <Compile Include="Core\IRepositories\IRepository.cs" />
+    <Compile Include="Core\IRepositories\IBrgyBizClearanceRepo.cs" />
+    <Compile Include="Core\IRepositories\IUserRepository.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Migrations\202002140635505_initial.cs" />
+    <Compile Include="Migrations\202002140635505_initial.Designer.cs">
+      <DependentUpon>202002140635505_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002140649072_modifyDateOnResident.cs" />
+    <Compile Include="Migrations\202002140649072_modifyDateOnResident.Designer.cs">
+      <DependentUpon>202002140649072_modifyDateOnResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002140745133_updateOfficial.cs" />
+    <Compile Include="Migrations\202002140745133_updateOfficial.Designer.cs">
+      <DependentUpon>202002140745133_updateOfficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002141517346_updateResidency.cs" />
+    <Compile Include="Migrations\202002141517346_updateResidency.Designer.cs">
+      <DependentUpon>202002141517346_updateResidency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003040705144_update-03-04-20.cs" />
+    <Compile Include="Migrations\202003040705144_update-03-04-20.Designer.cs">
+      <DependentUpon>202003040705144_update-03-04-20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003040855596_update-03-04-20_1.cs" />
+    <Compile Include="Migrations\202003040855596_update-03-04-20_1.Designer.cs">
+      <DependentUpon>202003040855596_update-03-04-20_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003040902285_update-03-04-20_2.cs" />
+    <Compile Include="Migrations\202003040902285_update-03-04-20_2.Designer.cs">
+      <DependentUpon>202003040902285_update-03-04-20_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003261415421_update-032620.cs" />
+    <Compile Include="Migrations\202003261415421_update-032620.Designer.cs">
+      <DependentUpon>202003261415421_update-032620.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003312137071_update-040120.cs" />
+    <Compile Include="Migrations\202003312137071_update-040120.Designer.cs">
+      <DependentUpon>202003312137071_update-040120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004021450410_update-040220.cs" />
+    <Compile Include="Migrations\202004021450410_update-040220.Designer.cs">
+      <DependentUpon>202004021450410_update-040220.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004030546318_update-04032020.cs" />
+    <Compile Include="Migrations\202004030546318_update-04032020.Designer.cs">
+      <DependentUpon>202004030546318_update-04032020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004031110064_update-040320.cs" />
+    <Compile Include="Migrations\202004031110064_update-040320.Designer.cs">
+      <DependentUpon>202004031110064_update-040320.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\EntityConfiguration\UserConfiguration.cs" />
+    <Compile Include="Persistence\DataContext.cs" />
+    <Compile Include="Persistence\Repositories\ChildrenRepo.cs" />
+    <Compile Include="Persistence\Repositories\EducationRepo.cs" />
+    <Compile Include="Persistence\Repositories\RoleRepo.cs" />
+    <Compile Include="Persistence\Repositories\QuarterlyReportRepo.cs" />
+    <Compile Include="Persistence\Repositories\HealthDataBoardRepo.cs" />
+    <Compile Include="Persistence\Repositories\CommonHealthProfileRepo.cs" />
+    <Compile Include="Persistence\Repositories\AccomplishmentRepo.cs" />
+    <Compile Include="Persistence\Repositories\Repository.cs" />
+    <Compile Include="Persistence\Repositories\BrgyBizClearanceRepo.cs" />
+    <Compile Include="Persistence\Repositories\BrgyClearanceRepo.cs" />
+    <Compile Include="Persistence\Repositories\IndigencyRepo.cs" />
+    <Compile Include="Persistence\Repositories\OfficialRepo.cs" />
+    <Compile Include="Persistence\Repositories\OfficialPositionRepo.cs" />
+    <Compile Include="Persistence\Repositories\ResidencyRepo.cs" />
+    <Compile Include="Persistence\Repositories\ResidentRepo.cs" />
+    <Compile Include="Persistence\Repositories\UserRepository.cs" />
+    <Compile Include="Persistence\UnitOfWork.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002140635505_initial.resx">
+      <DependentUpon>202002140635505_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002140649072_modifyDateOnResident.resx">
+      <DependentUpon>202002140649072_modifyDateOnResident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002140745133_updateOfficial.resx">
+      <DependentUpon>202002140745133_updateOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002141517346_updateResidency.resx">
+      <DependentUpon>202002141517346_updateResidency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003040705144_update-03-04-20.resx">
+      <DependentUpon>202003040705144_update-03-04-20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003040855596_update-03-04-20_1.resx">
+      <DependentUpon>202003040855596_update-03-04-20_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003040902285_update-03-04-20_2.resx">
+      <DependentUpon>202003040902285_update-03-04-20_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003261415421_update-032620.resx">
+      <DependentUpon>202003261415421_update-032620.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003312137071_update-040120.resx">
+      <DependentUpon>202003312137071_update-040120.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004021450410_update-040220.resx">
+      <DependentUpon>202004021450410_update-040220.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004030546318_update-04032020.resx">
+      <DependentUpon>202004030546318_update-04032020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004031110064_update-040320.resx">
+      <DependentUpon>202004031110064_update-040320.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
