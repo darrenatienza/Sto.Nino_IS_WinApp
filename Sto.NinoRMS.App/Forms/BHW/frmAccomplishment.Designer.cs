@@ -44,32 +44,32 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.pages = new Bunifu.UI.WinForms.BunifuPages();
             this.pageDetail = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.gridMain = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtTitle = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.txtTitle = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panel4.SuspendLayout();
             this.pages.SuspendLayout();
             this.pageDetail.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridMain)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,9 +90,24 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(4, 10);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(109, 19);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(115, 19);
             this.bunifuCustomLabel1.TabIndex = 3;
-            this.bunifuCustomLabel1.Text = "Accomplishment";
+            this.bunifuCustomLabel1.Text = "Accomplishments";
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = global::Sto.NinoRMS.App.Properties.Resources.close_window_32__1_;
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(539, 8);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(24, 24);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnClose.TabIndex = 0;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // bunifuElipse1
             // 
@@ -166,6 +181,43 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(280, 40);
             this.panel5.TabIndex = 39;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Active = true;
+            this.btnSave.Activecolor = System.Drawing.Color.ForestGreen;
+            this.btnSave.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.BorderRadius = 5;
+            this.btnSave.ButtonText = "";
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSave.Iconimage = global::Sto.NinoRMS.App.Properties.Resources.save_128;
+            this.btnSave.Iconimage_right = null;
+            this.btnSave.Iconimage_right_Selected = null;
+            this.btnSave.Iconimage_Selected = null;
+            this.btnSave.IconMarginLeft = 0;
+            this.btnSave.IconMarginRight = 0;
+            this.btnSave.IconRightVisible = false;
+            this.btnSave.IconRightZoom = 0D;
+            this.btnSave.IconVisible = true;
+            this.btnSave.IconZoom = 40D;
+            this.btnSave.IsTab = false;
+            this.btnSave.Location = new System.Drawing.Point(4, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Normalcolor = System.Drawing.Color.ForestGreen;
+            this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
+            this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnSave.selected = true;
+            this.btnSave.Size = new System.Drawing.Size(36, 34);
+            this.btnSave.TabIndex = 25;
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.Textcolor = System.Drawing.Color.White;
+            this.btnSave.TextFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolTip1.SetToolTip(this.btnSave, "Save");
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // gridMain
             // 
@@ -258,65 +310,6 @@
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             this.dataGridViewTextBoxColumn3.Width = 121;
             // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(283, 97);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(109, 19);
-            this.bunifuCustomLabel3.TabIndex = 3;
-            this.bunifuCustomLabel3.Text = "Accomplishment";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 40);
-            this.panel2.TabIndex = 16;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Active = true;
-            this.btnSave.Activecolor = System.Drawing.Color.ForestGreen;
-            this.btnSave.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.BorderRadius = 5;
-            this.btnSave.ButtonText = "";
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSave.Iconimage = global::Sto.NinoRMS.App.Properties.Resources.save_128;
-            this.btnSave.Iconimage_right = null;
-            this.btnSave.Iconimage_right_Selected = null;
-            this.btnSave.Iconimage_Selected = null;
-            this.btnSave.IconMarginLeft = 0;
-            this.btnSave.IconMarginRight = 0;
-            this.btnSave.IconRightVisible = false;
-            this.btnSave.IconRightZoom = 0D;
-            this.btnSave.IconVisible = true;
-            this.btnSave.IconZoom = 40D;
-            this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(4, 3);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Normalcolor = System.Drawing.Color.ForestGreen;
-            this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
-            this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSave.selected = true;
-            this.btnSave.Size = new System.Drawing.Size(36, 34);
-            this.btnSave.TabIndex = 25;
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSave.Textcolor = System.Drawing.Color.White;
-            this.btnSave.TextFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolTip1.SetToolTip(this.btnSave, "Save");
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // txtTitle
             // 
             this.txtTitle.AcceptsReturn = false;
@@ -390,6 +383,28 @@
             this.txtTitle.TextPlaceholder = "";
             this.txtTitle.UseSystemPasswordChar = false;
             this.txtTitle.WordWrap = true;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Semilight", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(283, 97);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(109, 19);
+            this.bunifuCustomLabel3.TabIndex = 3;
+            this.bunifuCustomLabel3.Text = "Accomplishment";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(556, 40);
+            this.panel2.TabIndex = 16;
             // 
             // btnAdd
             // 
@@ -542,21 +557,6 @@
             this.toolTip1.SetToolTip(this.btnDelete, "Delete");
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.Image = global::Sto.NinoRMS.App.Properties.Resources.close_window_32__1_;
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(539, 8);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(24, 24);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnClose.TabIndex = 0;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // frmAccomplishment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -571,6 +571,7 @@
             this.Load += new System.EventHandler(this.frmCommonHealthProfile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panel4.ResumeLayout(false);
             this.pages.ResumeLayout(false);
             this.pageDetail.ResumeLayout(false);
@@ -578,7 +579,6 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridMain)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
